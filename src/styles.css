@@ -24,20 +24,18 @@ body {
   width: 40vw;
   font-size: 5vw;
 }
+.search-input[placeholder] {
+  font-size: 3vw;
+  text-align: center;
+}
 .card {
   max-width: 70vw;
   margin-left: auto;
   margin-right: auto;
 }
-/* .countries-list-container {
-  display: flex;
-  justify-content: center;
-} */
+
 .countries-list {
   width: 40vw;
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
   margin-left: auto;
   margin-right: auto;
 }
@@ -46,12 +44,7 @@ body {
   justify-content: center;
   align-items: center;
 }
-.card-subtitle,
-.card-info,
-.card-list-languages {
-  /* margin: 0;
-  padding: 0; */
-}
+
 .card-title {
   margin: 0;
   font-size: 6vw;
@@ -66,9 +59,7 @@ body {
   /* padding-left: 10px; */
   list-style: none;
 }
-/* .card-subtitle {
-  padding-left: -10px;
-} */
+
 .card-subtitle .card-text,
 .card-text-languages,
 .countries-el {

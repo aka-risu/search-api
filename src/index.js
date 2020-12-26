@@ -17,7 +17,11 @@ inputRef.addEventListener('input', (debounce(e => search(e), 500)))
 // fetchCountries("sweden").then((countriesArray) => renderCountries(countriesArray))
 function search(e) {
     const searchQuery = e.target.value
-    if (searchQuery === "") return
+    if (searchQuery === "") {
+        countriesRef.innerHTML = "";
+        toastr.clear()
+        return
+    }
     fetchCountries(searchQuery).then(renderCountries).catch(err => toastr.error(err))
 }
 
