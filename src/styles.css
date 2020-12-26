@@ -1,3 +1,82 @@
-img {
-  width: 300px;
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif,
+    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+
+  /*
+   * CSS image reference example.
+   */
+}
+.search-input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40vw;
+  font-size: 5vw;
+}
+.card {
+  max-width: 70vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* .countries-list-container {
+  display: flex;
+  justify-content: center;
+} */
+.countries-list {
+  width: 40vw;
+  /* display: flex;
+  justify-content: center;
+  flex-direction: column; */
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-subtitle,
+.card-info,
+.card-list-languages {
+  /* margin: 0;
+  padding: 0; */
+}
+.card-title {
+  margin: 0;
+  font-size: 6vw;
+  text-align: center;
+}
+.card-subtitle {
+  margin-right: 10px;
+  font-size: 3vw;
+  font-weight: 700;
+}
+.card-info {
+  /* padding-left: 10px; */
+  list-style: none;
+}
+/* .card-subtitle {
+  padding-left: -10px;
+} */
+.card-subtitle .card-text,
+.card-text-languages,
+.countries-el {
+  font-weight: 400;
+}
+.card-list-languages {
+  list-style: disc;
+}
+.countries-el {
+  font-size: 3vw;
 }
