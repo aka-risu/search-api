@@ -14,7 +14,7 @@ const inputRef = document.querySelector('.js-search');
 const countriesRef = document.querySelector('.card')
 
 inputRef.addEventListener('input', (debounce(e => search(e), 500)))
-fetchCountries("sweden").then((countriesArray) => renderCountries(countriesArray))
+// fetchCountries("sweden").then((countriesArray) => renderCountries(countriesArray))
 function search(e) {
     const searchQuery = e.target.value
     if (searchQuery === "") return
@@ -57,8 +57,4 @@ function addCardInfo(array) {
 function addListOfMatches(array) {
     toastr.clear()
     countriesRef.insertAdjacentHTML('beforeend',countryListTemplate(array) )
-    // const names = array.map((obj) => obj.name)
-    //     names.forEach(name => {
-    //         countriesRef.insertAdjacentHTML('beforeend', `<li class="countries-el">${name}</li>`)
-    //     });
 }
